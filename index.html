@@ -4,12 +4,46 @@
 	<head>
 		<meta charset="UTF 8">
 		<title>Sobtrax - Links</title>
+		<link rel="stylesheet" href="style.css"
 	</head>
 	
 	<body>
-		<h1>Mamm0n rozjebał się na komendzie</h1>
-		<img src="img/mammon-mamm0n.gif" alt="Mamm0n brwiarz" width="2000" height="2000">
-		<script type="text/javascript" src="js/app.js"></script>
+		<section>
+			<h1>Sobtrax</h1>
+			<div class="btn-group">				
+				<a href=https://www.youtube.com/playlist?list=PLVsYIcuQ2nNgPu7FynnM-R3ZUdSE60vjX>
+				<button>Music</button>
+				</a>
+				
+				<a href=https://github.com/Sobtrax?tab=repositories>
+				<button>Github</button>
+				</a>
+				
+				<a href=https://www.spoj.com/users/sobtrax/>
+				<button> SPOJ</button>
+				</a>
+			</div>
+
+			<script>
+				function changeBg() {
+					const images = [
+						'url("img/bg/2.jpg")',
+						'url("img/bg/3.png")',
+						'url("img/bg/4.png")',
+						'url("img/bg/5.jpg")',
+						'url("img/bg/6.jpg")',
+						'url("img/bg/7.jpg")',
+						'url("img/bg/8.jpg")',
+						'url("img/bg/9.jpg")',
+					]
+					
+					const section = document.querySelector('section');
+					const bg = images[Math.floor(Math.random() * images.length)];
+					section.style.backgroundImage = bg;
+				}
+				changeBg();
+			</script>
+		</section>
 	</body>
 
 </html>
