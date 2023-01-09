@@ -3,26 +3,26 @@
 body
 {
 	margin: 0;
-	font-family: system-ui;
+	font-family: Poppins;
+	font-weight: bold;
 }
 section{ 
 	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: url(img/bg/2.jpg);
-	display: block;
-	justify-content: center;
-	align-items: center;
 }
 section  h1 {
 	font-size: 6vw;
-	color: #1dbbd3;
+	color: #0ba2ba;
 	background: black;
 	padding: 20px 40px;
 	justify-content: center;
 	margin: auto;
+	border:purple;
 	text-align: center;
 	mix-blend-mode: screen;
 }
@@ -30,15 +30,24 @@ section  h1 {
 .btn-group button {
 	display: flex;
 	border: 1px solid purple;
-	background-color: #1dbbd3;
-	padding: 10px 24px;
-	width: 20%;
+	background-color: #a619e8;
+	padding: 1em;
+	border-radius: 23px;
+	width: 23%;
+	transition-duration: 0.5s;
 	justify-content: center;
-	margin: auto;
-	text-align: center;
+	margin: 0 auto 3em;
+	align-items: center;
+	opacity: 0.85;
 }
 
 .button {
     position: relative;
     top: 50%;
+	cursor: pointer;
+	font-size: 18px;
+}
+.button:hover {
+	background-color: rgba(235, 232, 232, 0.425);
+	color: #000;
 }
