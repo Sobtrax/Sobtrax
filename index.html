@@ -9,15 +9,17 @@
 	</head>
 	
 	<body>
+		<div id="particles-js"></div>	
 		<section>
 			<h1>Sobtrax</h1>
+			
 			<div class="btn-group">		
 				<button class="button" onclick="window.location.href='https://www.youtube.com/playlist?list=PLVsYIcuQ2nNgPu7FynnM-R3ZUdSE60vjX'">
 				<img src="img/icons/youtube.png" width="20">
 				Music
 				</button>
 					
-				<button class="button" onclick="window.location.href='https://github.com/Sobtrax?tab=repositories'">
+				<button class="button" onclick="window.location.href='https://github.com/Sobtrax'">
 				<img src="img/icons/github.svg" width="20">
 				Github
 				</button>
@@ -27,27 +29,12 @@
 				SPOJ
 				</button>
 			</div>
-
-			<script>
-				function changeBg() {
-					const images = [
-						'url("img/bg/1.jpg")',
-						'url("img/bg/2.jpg")',
-						'url("img/bg/3.png")',
-						'url("img/bg/4.png")',
-						'url("img/bg/5.jpg")',
-						'url("img/bg/6.jpg")',
-						'url("img/bg/7.jpg")',
-						'url("img/bg/8.jpg")'
-					]
-					
-					const section = document.querySelector('section');
-					const bg = images[Math.floor(Math.random() * images.length)];
-					section.style.backgroundImage = bg;
-				}
-				changeBg();
-			</script>
+			
 		</section>
+		
+		<script src="js/changeBg.js"></script>
+		<script src="js/particles.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 
 </html>
